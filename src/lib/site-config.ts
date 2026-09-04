@@ -40,10 +40,10 @@ export const siteConfig = {
   // ─── Social ───────────────────────────────────────────────────────────────
   social: {
     // TODO: Replace with real handles/URLs
-    instagram: "https://instagram.com/canabisa.patong",
-    facebook: "https://facebook.com/canabisa.patong",
-    instagramHandle: "@canabisa.patong",
-    facebookHandle: "canabisa.patong",
+    instagram: "https://instagram.com/cannabisacafe",
+    facebook: "https://facebook.com/cannabisacafe",
+    instagramHandle: "@cannabisacafe",
+    facebookHandle: "cannabisacafe",
   },
 
   // ─── SEO ──────────────────────────────────────────────────────────────────
