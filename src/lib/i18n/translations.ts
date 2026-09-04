@@ -390,6 +390,15 @@ export const translations = {
       ar: "اتصل",
     },
   },
+
+  // ─── WhatsApp ─────────────────────────────────────────────────────────────
+  whatsapp: {
+    message: {
+      en: "Chat with us on WhatsApp",
+      th: "แชทกับเราใน WhatsApp",
+      ar: "تحدث معنا على واتساب",
+    },
+  },
 } as const;
 
 export type TranslationKey = keyof typeof translations;

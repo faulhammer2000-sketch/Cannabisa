@@ -17,6 +17,7 @@ import { ExperienceStack } from "@/components/stack-cards";
 import { GallerySection } from "@/components/gallery";
 import { SiteFooter } from "@/components/footer";
 import { AgeVerification } from "@/components/age-gate";
+import { WhatsAppButton } from "@/components/ui";
 
 export default function Home() {
   return (
@@ -65,6 +66,9 @@ export default function Home() {
 
       {/* Footer */}
       <SiteFooter />
+
+      {/* WhatsApp Floating Button */}
+      <WhatsAppButton />
     </>
   );
 }

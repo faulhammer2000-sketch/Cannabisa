@@ -44,6 +44,8 @@ export const siteConfig = {
     facebook: "https://facebook.com/cannabisacafe",
     instagramHandle: "@cannabisacafe",
     facebookHandle: "cannabisacafe",
+    whatsapp: "+66634163552",
+    whatsappUrl: "https://wa.me/66634163552",
   },
 
   // ─── SEO ──────────────────────────────────────────────────────────────────
