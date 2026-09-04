@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { motion, AnimatePresence } from "motion/react";
+import { motion, AnimatePresence } from "framer-motion";
 import { useI18n } from "@/lib/i18n";
 import { Button, ArrowIcon } from "@/components/ui";
 import { LanguageSwitcher } from "./LanguageSwitcher";

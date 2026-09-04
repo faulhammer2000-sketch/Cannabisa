@@ -3,7 +3,7 @@
 import React, { useEffect, useRef } from "react";
 import Image from "next/image";
 import { gsap } from "@/lib/animations/gsap-init";
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 import { useI18n } from "@/lib/i18n";
 import { siteConfig } from "@/lib/site-config";
 import { Button, ArrowIcon } from "@/components/ui";

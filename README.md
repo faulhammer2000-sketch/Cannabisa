@@ -23,8 +23,8 @@ A production-quality, multilingual single-page website for a premium cannabis sh
 - **Framework**: Next.js 15.1.0 (App Router)
 - **Language**: TypeScript 5.7.2
 - **Styling**: Tailwind CSS 3.4.17
-- **Animations**: GSAP 3.12.5 + Motion 11.15.0
-- **Smooth Scroll**: Lenis 1.0.45
+- **Animations**: GSAP 3.12.5 + Framer Motion 11.15.0
+- **Smooth Scroll**: Lenis 1.1.17
 - **Fonts**: Cormorant Garamond, Manrope, Noto Sans Arabic
 
 ---

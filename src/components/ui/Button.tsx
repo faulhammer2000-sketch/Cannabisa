@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { motion } from "motion/react";
+import { motion } from "framer-motion";
 import { useI18n } from "@/lib/i18n";
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {

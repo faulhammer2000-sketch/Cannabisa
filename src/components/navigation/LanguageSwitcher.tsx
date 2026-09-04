@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { motion, AnimatePresence } from "motion/react";
+import { motion, AnimatePresence } from "framer-motion";
 import { useI18n, Language } from "@/lib/i18n";
 
 const languages: { code: Language; label: string; native: string }[] = [
