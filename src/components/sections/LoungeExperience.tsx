@@ -64,7 +64,7 @@ export function LoungeExperience() {
 
               {/* Features */}
               <div ref={featuresRef} className="grid grid-cols-2 gap-4">
-                {features.map((featureKey, index) => (
+                {features.map((featureKey) => (
                   <motion.div
                     key={featureKey}
                     className="feature-item card-premium p-6 opacity-0"

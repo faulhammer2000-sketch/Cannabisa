@@ -17,11 +17,11 @@ export const siteConfig = {
     country: "Thailand",
     display: "Patong, Phuket, Thailand",
     eyebrow: "PATONG · PHUKET · THAILAND",
-    // TODO: Replace with exact address when available
-    address: "YOUR ADDRESS HERE, Patong, Phuket 83150, Thailand",
-    // TODO: Replace with real phone number
-    phone: "+66 XX XXX XXXX",
-    // TODO: Replace with real opening hours
+    // Real business information
+    address: "Coffee Shop Cannabisa Cafe Weed & Bar, Patong, Phuket, Thailand",
+    // Real phone number
+    phone: "+66 63 416 3552",
+    // TODO: Replace with real opening hours when available
     hours: {
       weekdays: "TBC",
       weekends: "TBC",
@@ -50,11 +50,13 @@ export const siteConfig = {
   seo: {
     defaultLang: "en",
     siteUrl: "https://canabisa.com",
-    title: "CANABISA — Cannabis, Drinks & Social Lounge in Patong",
+    title: "Coffee Shop Cannabisa Cafe Weed & Bar — Cannabis & Social Lounge in Patong, Phuket",
     description:
-      "A relaxed cannabis shop and social lounge in Patong, Phuket. Good-quality products, fair prices, friendly recommendations, drinks and a welcoming late-night atmosphere.",
+      "Coffee Shop Cannabisa Cafe Weed & Bar - A relaxed cannabis shop and social lounge in Patong, Phuket. Good-quality products, fair prices, friendly recommendations, drinks and a welcoming late-night atmosphere.",
     ogImage: "/images/og-image.jpg",
     keywords: [
+      "Coffee Shop Cannabisa",
+      "Cannabisa Cafe",
       "cannabis shop Patong",
       "cannabis lounge Phuket",
       "social lounge Patong",
@@ -63,6 +65,7 @@ export const siteConfig = {
       "Phuket cannabis",
       "cannabis drinks Phuket",
       "weed shop Patong",
+      "Cannabisa Patong",
     ],
   },
 

@@ -14,11 +14,9 @@ const I18nContext = createContext<I18nContextType | undefined>(undefined);
 
 export function I18nProvider({ children }: { children: React.ReactNode }) {
   const [language, setLanguageState] = useState<Language>("en");
-  const [mounted, setMounted] = useState(false);
 
   // Load language from localStorage on mount
   useEffect(() => {
-    setMounted(true);
     const saved = localStorage.getItem("canabisa-language");
     if (saved === "th" || saved === "ar" || saved === "en") {
       setLanguageState(saved);
@@ -49,6 +47,7 @@ export function I18nProvider({ children }: { children: React.ReactNode }) {
   const t = (key: string): string => {
     try {
       const keys = key.split(".");
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       let value: any = translations;
 
       for (const k of keys) {
@@ -72,11 +71,6 @@ export function I18nProvider({ children }: { children: React.ReactNode }) {
   };
 
   const dir = language === "ar" ? "rtl" : "ltr";
-
-  // Prevent hydration mismatch
-  if (!mounted) {
-    return null;
-  }
 
   return (
     <I18nContext.Provider value={{ language, setLanguage, t, dir }}>

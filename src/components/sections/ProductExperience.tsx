@@ -6,7 +6,6 @@ import { gsap } from "@/lib/animations/gsap-init";
 import { motion } from "framer-motion";
 import { useI18n } from "@/lib/i18n";
 import { siteConfig } from "@/lib/site-config";
-import { SectionLabel } from "@/components/ui";
 
 export function ProductExperience() {
   const { t } = useI18n();

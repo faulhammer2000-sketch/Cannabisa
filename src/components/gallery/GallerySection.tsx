@@ -144,7 +144,7 @@ export function GallerySection() {
       <ImageLightbox
         isOpen={lightboxOpen}
         onClose={() => setLightboxOpen(false)}
-        images={siteConfig.gallery}
+        images={[...siteConfig.gallery]}
         currentIndex={currentImageIndex}
         onNext={handleNext}
         onPrevious={handlePrevious}

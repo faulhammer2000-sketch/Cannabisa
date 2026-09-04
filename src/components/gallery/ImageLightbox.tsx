@@ -30,9 +30,21 @@ export function ImageLightbox({
     if (!isOpen) return;
 
     const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === "Escape") onClose();
-      if (e.key === "ArrowLeft") dir === "rtl" ? onNext() : onPrevious();
-      if (e.key === "ArrowRight") dir === "rtl" ? onPrevious() : onNext();
+      if (e.key === "Escape") {
+        onClose();
+      } else if (e.key === "ArrowLeft") {
+        if (dir === "rtl") {
+          onNext();
+        } else {
+          onPrevious();
+        }
+      } else if (e.key === "ArrowRight") {
+        if (dir === "rtl") {
+          onPrevious();
+        } else {
+          onNext();
+        }
+      }
     };
 
     window.addEventListener("keydown", handleKeyDown);

@@ -9,12 +9,11 @@ import { LanguageSwitcher } from "./LanguageSwitcher";
 import { MobileMenu } from "./MobileMenu";
 
 export function SiteNavigation() {
-  const { t, dir } = useI18n();
+  const { t } = useI18n();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
   const { scrollY } = useScroll();
-  const navOpacity = useTransform(scrollY, [0, 100], [0.8, 0.98]);
   const navBlur = useTransform(scrollY, [0, 100], [0, 20]);
 
   useEffect(() => {

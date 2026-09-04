@@ -28,9 +28,10 @@ const notoArabic = Noto_Sans_Arabic({
 
 // ─── Metadata ───────────────────────────────────────────────────────────────
 export const metadata: Metadata = {
+  metadataBase: new URL(siteConfig.seo.siteUrl),
   title: siteConfig.seo.title,
   description: siteConfig.seo.description,
-  keywords: siteConfig.seo.keywords,
+  keywords: [...siteConfig.seo.keywords],
   authors: [{ name: siteConfig.name }],
   creator: siteConfig.name,
   publisher: siteConfig.name,

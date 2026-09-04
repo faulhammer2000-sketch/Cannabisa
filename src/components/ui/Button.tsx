@@ -4,7 +4,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { useI18n } from "@/lib/i18n";
 
-interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
+interface ButtonProps {
   variant?: "primary" | "secondary" | "outline";
   size?: "sm" | "md" | "lg";
   href?: string;
@@ -13,6 +13,10 @@ interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   iconPosition?: "left" | "right";
   fullWidth?: boolean;
   asLink?: boolean;
+  className?: string;
+  onClick?: () => void;
+  disabled?: boolean;
+  type?: "button" | "submit" | "reset";
 }
 
 export function Button({
@@ -25,7 +29,9 @@ export function Button({
   fullWidth = false,
   asLink = false,
   className = "",
-  ...props
+  onClick,
+  disabled = false,
+  type = "button",
 }: ButtonProps) {
   const { dir } = useI18n();
 
@@ -102,7 +108,9 @@ export function Button({
       whileHover={{ scale: 1.02 }}
       whileTap={{ scale: 0.98 }}
       transition={{ duration: 0.2 }}
-      {...props}
+      onClick={onClick}
+      disabled={disabled}
+      type={type}
     >
       {content}
     </motion.button>
